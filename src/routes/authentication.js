@@ -147,7 +147,7 @@ router.post('/forgett/', async (req, res) => {
                 port:465,
                 secure:true,
                 auth: {
-                    user: 'alejandro_27_@outlook.com',
+                    user: 'alejandroo_27_@outlook.com',
                     pass: 'deliar1988'
                 }
             });
