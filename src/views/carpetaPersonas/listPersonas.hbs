@@ -1,0 +1,79 @@
+<br>
+<br>
+
+
+<div class="container p-4">
+    <div class="row">
+
+        {{#each persona}}
+
+
+
+        <div class="col-md-3">
+
+
+            <div class="card text-center">
+
+
+                <div class="card-body">
+
+                      <p class="m-2">
+
+                        {{#if (decicion descripcion "administrador")}}
+                            <img src="img/admin.png" alt="Third slide" style="width: 100px;">
+                        {{else}}
+                           <img src="img/usuario.png" alt="Third slide" style="width: 100px;">
+                         {{/if}}
+
+                       
+                    </p>
+
+
+                    <h3 class="card-title text-appercase">
+                        {{descripcion}}
+                    </h3>
+                  
+
+                    <p class="m-2">
+
+                        {{nombre}}
+                    </p>
+
+                    <p class="m-2">
+
+                        {{apellido}}
+                    </p>
+                    <p class="m-2">
+
+                        {{rut}}
+                    </p>
+                    <p class="m-2">
+
+                        {{correo}}
+                    </p>
+                    <img src="img/editar.png" alt="Third slide">
+                    <a href="/carpetaPersonas/editarPersona/{{idPersona}}" class="btn btn-secondary">edit</a>
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card-card-body text-center">
+
+
+            </div>
+        </div>
+
+
+        {{/each}}
+    </div>
+
+</div>

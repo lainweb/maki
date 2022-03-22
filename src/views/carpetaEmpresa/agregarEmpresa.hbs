@@ -1,0 +1,92 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>crearEmpresa</h3>
+                        <div class="card-body">
+                            <form method="POST" enctype="multipart/form-data">
+
+                                <div>
+                                    <img src="/img/agregar.png" alt="Third slide" style="width: 70px;">
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" name="idPersona" placeholder="idPersona" class="form-control"
+                                        value="{{usuario.idPersona}}">
+
+                                </div>
+
+                                <select name="idTipo">
+                                    {{#each tipo}}
+                                    <option value="{{idTipo}}">{{nombreTipoEmpresa}}</option>
+                                    {{/each}}
+                                </select>
+
+
+                                <div class="form-group">
+                                    <input type="text" name="nombreEmpresa" placeholder="nombreEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="sloganEmpresa" placeholder="sloganEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="ciudadEmpresa" placeholder="ciudadEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="fonoEmpresa" placeholder="fonoEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="horarioEmpresa" placeholder="horarioEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" name="suscripcionEmpresa" placeholder="suscripcionEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" name="estrellasEmpresa" placeholder="estrellasEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" name="fechaEmpresa" placeholder="fechaEmpresa"
+                                        class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name="imagenEmpresa" placeholder="imagenEmpresa"
+                                        class="form-control">
+
+                                </div>
+                               
+
+                               
+                                
+                                <div class="form-group">
+                                    <button class="btn btn success btn-block">registrar</button>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>

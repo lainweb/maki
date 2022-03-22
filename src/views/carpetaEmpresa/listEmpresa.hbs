@@ -1,0 +1,82 @@
+<br>
+<br>
+
+
+
+<div class="container p-4">
+    <div class="row">
+
+
+
+
+        {{#each empresa}}
+
+
+
+
+
+        <div class="col-md-3">
+
+
+            <div class="card text-center">
+
+
+                <div class="card-body">
+
+                    <div>
+                        <img src="img/empresa.png" alt="Third slide" style="width: 50px;">
+                    </div>
+
+
+
+                    <h5 class="card-title text-appercase">
+                        {{nombreEmpresa}}
+                    </h5>
+
+                    <p class="m-2">
+                        "{{sloganEmpresa}}"
+                    </p>
+
+                    <p class="m-2">
+                        {{ciudadEmpresa}}
+                    </p>
+
+                    <p class="m-2">
+                        {{fonoEmpresa}}
+                    </p>
+                     horario de atencion:
+                    <p class="m-2">
+                       
+                        {{horarioEmpresa}}
+                    </p>
+
+
+
+                    <div>
+                        <img src="img/{{imagenEmpresa}}" alt="Third slide" style="width: 150px;height:100px;border-radius:10%;">
+                    </div>
+<br>
+                    <div><a href="/carpetaEmpresa/editEmpresa/{{idEmpresa}}"style="width: 100%;"  class="btn btn-success">editEmpresa</a></div>
+                    <div><a href="/carpetaServicio/listServicio/{{idEmpresa}}"style="width: 100%;"class="btn btn-success">listarServicios</a></div>
+                    <div><a href="/carpetaServicio/agregarServicio/{{idEmpresa}}"style="width: 100%;"class="btn btn-success">agregarServicio</a></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card-card-body text-center">
+
+
+            </div>
+        </div>
+
+
+        {{/each}}
+    </div>
+
+</div>

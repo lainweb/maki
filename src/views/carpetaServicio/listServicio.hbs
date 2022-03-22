@@ -1,0 +1,64 @@
+<br>
+<br>
+<div class="container p-4">
+
+
+
+    <div class="row">
+        {{#each servicio}}
+
+
+
+        <div class="col-md-3">
+
+
+            <div class="card text-center">
+
+
+
+                <div class="card-body">
+
+                     <div>
+                        <img  src="/img/servicio.png" alt="Third slide" style="width: 100px;">
+                    </div>
+
+
+                    
+                    <p class="m-2">
+                        {{nombreServicio}}
+                    </p>
+                    <p class="m-2">
+                        {{descripcionServicio}}
+                    </p>
+                    <p class="m-2">
+                        {{valorServicio}}
+                    </p>
+
+
+                    <a href="/carpetaServicio/editServicio/{{idServicio}}" class="btn btn-secondary">edit</a>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card-card-body text-center">
+
+
+            </div>
+        </div>
+
+
+        {{/each}}
+    </div>
+
+</div>

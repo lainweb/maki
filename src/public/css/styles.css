@@ -1,0 +1,98 @@
+body {
+    background: #f5f6fa;
+font-family: 'Oswald', sans-serif;
+
+    overflow: hidden;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    color: rgb(226, 8, 8) !important;
+}
+
+.masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+    }
+    .masthead h1 {
+      font-size: 5.5rem;
+    }
+  }
+  .links{
+    color: black;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+
+
+  }
+  .palabras{
+   color: black;
+   font-family: serif;
+    
+  }
+  .content {
+    overflow: scroll;
+  }
+  .palabra {
+    font-family: fantasy;
+  }
+
+
+
+  .hexagon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    
+    background-size: cover;
+    margin: 10px auto;
+    height: 400px;
+    width: 400px;      
+  }
+  .hexagonVeamos {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    
+    background-size: cover;
+    margin: 10px auto;
+    height: 200px;
+    width: 200px;      
+  }
+  .hexagonperfil {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    
+    background-size: cover;
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;      
+  }
+
+
+
+  

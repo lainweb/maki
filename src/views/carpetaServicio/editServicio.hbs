@@ -1,0 +1,47 @@
+<br>
+<br>
+<div class="container-p4">
+
+    <div class="row">
+        <div class="cold-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/carpetaServicio/editServicio/{{servicio.idServicio}}" method="POST">
+                     <div class="form-group" style="text-align: center;">
+                            <img src="/img/editar.png" alt="Third slide">
+                        </div>
+
+                       
+                        <div class="form-group">
+
+                            <input type="text" value="{{servicio.nombreServicio}}" name="nombreServicio" class="form-control" placeholder="nombreTipoEmpresa" required>
+
+                        </div>
+                         <div class="form-group">
+
+                            <input type="text" value="{{servicio.descripcionServicio}}" name="descripcionServicio" class="form-control" placeholder="descripcionTipoEmpresa" required>
+
+                        </div>
+                               <div class="form-group">
+
+                            <input type="text" value="{{servicio.valorServicio}}" name="valorServicio" class="form-control" placeholder="valorServicio" required>
+
+                        </div>
+                      
+
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Actualizar
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

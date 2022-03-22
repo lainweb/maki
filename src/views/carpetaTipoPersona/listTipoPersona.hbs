@@ -1,0 +1,90 @@
+<br>
+<br>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Maki infomation
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                leonel fernando alejandro huanca
+                informacion de la tabla de tipo personas
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center;">
+    <img src="img/lista.png" alt="Third slide">
+</div>
+
+
+<div class="container p-4">
+    <div class="row">
+        {{#each tipop}}
+
+
+
+        <div class="col-md-3">
+
+
+            <div class="card text-center">
+
+
+                <div class="card-body">
+
+
+                    <p class="m-2">
+
+                        {{#if (decicion idTipop 1)}}
+                            <img src="img/admin.png" alt="Third slide" style="width: 100px;">
+                        {{else}}
+                           <img src="img/usuario.png" alt="Third slide" style="width: 100px;">
+                         {{/if}}
+
+                       
+                    </p>
+                     <h3 class="m-2">
+                        {{nombreTipoPersona}}
+                    </h3>
+
+                    <p class="m-2">
+                        {{descripcionTipoPersona}}
+                    </p>
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card-card-body text-center">
+
+
+            </div>
+        </div>
+
+
+        {{/each}}
+    </div>
+
+</div>

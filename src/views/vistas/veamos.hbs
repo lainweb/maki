@@ -1,0 +1,94 @@
+<br>
+<br>
+
+
+
+
+
+<div style="width: 80%; text-align: center; margin:auto">
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7" style="text-align: left;">
+      <h3>Bienvenido a {{empresa.nombreEmpresa}}</h3>
+      <h7><em>{{empresa.sloganEmpresa}}</em><span></span></h7>
+      <br>
+      <br>
+      <h6><em>CIUDAD:{{empresa.ciudadEmpresa}}</em><span></span></h6>
+      <h6><em>FONO:{{empresa.fonoEmpresa}}</em><span></span></h6>
+      <h6><em>HORARIO DE ATENCION:{{empresa.horarioEmpresa}}</em><span></span></h6>
+    </div>
+
+    <div class="hexagonVeamos" style="display: flex;">
+      <img class="featurette-image img-fluid mx-auto" src="/img/{{empresa.imagenEmpresa}}"data-src="holder.js/200x200/auto"  >
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+<br>
+ <h4 style="text-align: center;">CATALOGO DE PRODUCTOS O SERVICIOS</h4>
+<div class="container p-4">
+
+  <div class="row">
+    {{#each servicio}}
+
+
+
+    <div class="col-md-3">
+
+
+      <div class="card text-center">
+
+
+
+        <div class="card-body">
+
+
+
+
+
+          <p class="m-2">
+            {{nombreServicio}}
+          </p>
+          <p class="m-2">
+            {{descripcionServicio}}
+          </p>
+          <p class="m-2">
+            ${{valorServicio}}
+          </p>
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    {{else}}
+    <div class="col-md-4 mx-auto">
+      <div class="card-card-body text-center">
+
+
+      </div>
+    </div>
+
+
+    {{/each}}
+  </div>
+
+</div>

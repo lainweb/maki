@@ -1,0 +1,180 @@
+<nav style="background-color: black;">
+  <a href="/vistas/informacion" style="color: rgb(255, 254, 254); font-family:fantasy" target="_blank">Informacion</a>
+  <a href="/vistas/anuncios" style="color: rgb(248, 247, 247);font-family:fantasy" target="_blank">Anuncios</a>
+  
+</nav>
+
+<nav class="navbar navbar-expand-lg " style="height: 70px; position:fixed; z-index:3; width:100%">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <link rel="stylessheet" href="/css/styles.css">
+  <script type="text/handlebars"></script>
+  <div class="container">
+    <a class="navbar-brand" href="/">
+
+
+      <img src="img/logo.png" alt="Card image cap" style="height: 70px;">
+
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+
+
+        {{#if usuario}}
+        {{decicion usuario.idTipop 1}}
+
+        {{#if (decicion usuario.idTipop 1)}}
+
+
+        <li class="nav-item dropdown">
+          <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
+            Personas
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaPersonas">listaPersonas</a>
+            <a class="dropdown-item" style="font-family: fantasy;"
+              href="/carpetaPersonas/agregarPersona">crearAdministrador</a>
+
+
+        </li>
+        &nbsp;&nbsp;&nbsp;
+        <li class="nav-item dropdown">
+          <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
+            tipoPersonas
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaTipoPersona">listaTipoPersonas</a>
+
+
+        </li>
+        &nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item dropdown">
+          <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
+            empresas
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaEmpresa">listaEmpresas</a>
+            <a class="dropdown-item" style="font-family: fantasy;"
+              href="/carpetaEmpresa/agregarEmpresa">crearEmpresa</a>
+
+        </li>
+        &nbsp;&nbsp;&nbsp;
+        <li class="nav-item dropdown">
+          <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
+            tipo
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaTipoEmpresa">lista</a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" style="font-family: fantasy;"
+              href="/carpetaTipoEmpresa/agregarTipo">agregarTipo</a>
+          </div>
+        </li>
+        &nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+        &nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a href="/profile" class="btn btn-outline-secondary " style="font-family: fantasy;">mi perfil</a>
+        </li>
+        &nbsp;&nbsp;&nbsp;
+
+
+        <div>{{calculation usuario.idTipop}}</div>
+
+        <li class="nav-item">
+          <a href="/logout" class="btn btn-outline-secondary " style="font-family: fantasy;">cerrarSession</a>
+        </li>
+
+
+        {{else}}
+        <li class="nav-item">
+          <a href="/profile" class="btn btn-outline-secondary " style="font-family: fantasy;">mi perfil</a>
+        </li>
+        <li class="nav-item">
+          <a href="/carpetaPersonas/editarUsuario" class="btn btn-outline-secondary "
+            style="font-family: fantasy;">editar mi perfil</a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
+            empresas
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaEmpresa">listaEmpresas</a>
+            <a class="dropdown-item" style="font-family: fantasy;"
+              href="/carpetaEmpresa/agregarEmpresa">crearEmpresa</a>
+            <div class="dropdown-divider"></div>
+
+          </div>
+        </li>
+
+
+        <div>{{calculation usuario.idTipop}}</div>
+
+        <li class="nav-item">
+          <a href="/logout" class="btn btn-outline-secondary " style="font-family: fantasy;">cerrarSession</a>
+        </li>
+        }
+
+        {{/if}}
+
+
+
+
+
+        {{else}}
+        <li class="nav-item">
+          <a href="/signin" class="btn btn-sm btn-outline-secondary"
+            style="border-radius: 9px; padding: 10px;font-family: fantasy">LOGIN </a>
+        </li>
+        &nbsp;&nbsp;&nbsp;
+
+        <li class="fondo">
+          <a href="/signup" class="btn btn-sm btn-outline-secondary  "
+            style="border-radius: 9px; padding: 10px;font-family: fantasy">REGISTRARCE</a>
+        </li>
+        &nbsp;
+        <li class="fondo">
+          <a href="/vistas/verEmpresas" class="btn btn-sm btn-outline-secondary  "
+            style="border-radius: 9px; padding: 10px;font-family: fantasy">VerEmpresas</a>
+        </li>
+
+
+
+
+        {{/if}}
+
+
+
+
+      </ul>
+    </div>
+  </div>
+</nav>

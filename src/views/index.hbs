@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body style="overflow: scroll;">
+
+
+
+  <div style="position:relative">
+    <img src="img/fondo.jpg" width="100%;" style="height: 550px;" />
+
+    <div style="position:absolute; top:0; left:0;">
+      
+        <br>
+        
+         <div >
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="featurette-heading" style="color: blue;">BETA<br>Nueva Mirada</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2"> Nuva pagina hecha para la busqueda de empresas que ofrecen su productos o servicios, aprochando la internet para proporcionarlas.</p>
+                            <a href="/vistas/informacion"  class="btn-btn-light" >Informacion</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+
+
+ 
+        <form>
+          <select name="idTipo">
+            {{#each tipo}}
+            <option value="{{idTipo}}">{{nombreTipoEmpresa}}</option>
+            {{/each}}
+          </select>
+
+
+
+
+
+
+          <div class="form-group">
+            <button class="btn btn success btn-block">BUSCAR</button>
+
+          </div>
+        </form>
+
+
+  
+
+
+
+
+
+
+
+  <div style="width: 80%; text-align: center; margin:auto">
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" style="color:rgb(31, 33, 34)">Maki el sistema de busqueda productos y servicios.
+        </h2>
+        <p class="lead" style="color:rgb(8, 8, 8)">Ofrece a sus usuarios variadas empresas con sus respetivos servicios,
+          estas consisten en empresas sobre tecnologia,perfumeria,plomeria pasteleria, todas estas dispuestas a
+          contactarse con usted y ofrecer sus productos.</p>
+      </div>
+      <div   class="hexagon" style="display: flex;" >
+        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+          alt="Generic placeholder image" src="img/portada1.jpg"  >
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading" style="color:rgb(31, 33, 34)">proveedores de servicios . </h2>
+        <p class="lead" style="color:rgb(1, 13, 26)">busca a tu proveedor y revisa los servicios o producotos que ofrece.</p>
+      </div>
+      <div class="hexagon" style="display: flex;">
+        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+          alt="Generic placeholder image" src="img/portada2.jpg" >
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" style="color:rgb(31, 33, 34)">Da a conocer tu empresa al mundo</h2>
+        <p class="lead" style="color:rgb(0, 0, 0)">Actualizate y no te quedes atras, maki te ayudara con todas la
+          informacion acerca de la pagina.</p>
+      </div>
+      <div class="hexagon" style="display: flex;">
+        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+          alt="Generic placeholder image" src="img/portada3.jpg" >
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://LainWeb.cl/">LainWeb.cl</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+
+
+
+
+
+</html>

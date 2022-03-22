@@ -1,0 +1,50 @@
+<br>
+
+
+<br>
+<div class="container p-4">
+
+    <div class="row">
+        {{#each empresa}}
+
+        <div class="col-md-3">
+            <div style="text-align: center; ">
+                <div class="card card-inverse" style="border-radius: 7%;border:10px solid:black">
+
+
+                    <h4 style="font-family: fantasy; " class="card-title">{{nombreEmpresa}}</h4>
+                    <img class="img-fluid" alt="Card image" src="/img/{{imagenEmpresa}}" alt=""
+                        style="height: 150px;" />
+                    <div class="card-img-overlay">
+                       
+                        <br>
+                        <br>
+                        <br>
+                         <br>
+                        <br>
+
+                        <div   style="text-align: right;font-family:fantasy"><a  href="/vistas/veamos/{{idEmpresa}}" style="width: 30%;"
+                                class="btn btn-dark">Ver</a></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card-card-body text-center">
+
+
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>

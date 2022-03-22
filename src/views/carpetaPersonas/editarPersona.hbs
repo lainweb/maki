@@ -1,0 +1,84 @@
+<br>
+<br>
+<br>
+
+<div class="container-p4">
+
+    <div class="row">
+        <div class="cold-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/carpetaPersonas/editarPersona/{{persona.idPersona}}" method="POST">
+                        <div class="form-group" style="text-align: center;">
+                            <img src="/img/editar.png" alt="Third slide">
+                        </div>
+
+
+                        <div class="form-group">
+                            <select name="idTipop" title="idTipop">
+                                {{#each tipop}}
+                                <option value="{{idTipop}}">{{nombreTipoPersona}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                         <div class="form-group">
+                            <select name="idEstado" title="idEstado">
+                                {{#each estado}}
+                                <option value="{{idEstado}}">{{nombreEstado}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+
+                       
+                        <div class="form-group">
+
+                            <input type="text" value="{{persona.rutPersona}}" name="rutPersona" class="form-control"
+                                placeholder="nombresPersona" readonly>
+
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" value="{{persona.nombresPersona}}" name="nombresPersona"
+                                class="form-control" placeholder="nombresPersona" readonly>
+
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" value="{{persona.apellidoPersona}}" name="apellidoPersona"
+                                class="form-control" placeholder="apellidoPersona" readonly>
+
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" value="{{persona.correoPersona}}" name="correoPersona"
+                                class="form-control" placeholder="apellidoPersona" readonly>
+
+                        </div>
+
+                         <div class="form-group">
+
+                            <input type="text" value="{{persona.imagenPersona}}" name="imagenPersona"
+                                class="form-control" placeholder="imagenPersona" >
+
+                        </div>
+
+
+
+
+
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Actualizar
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,50 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each producto}}
+
+
+
+        <div class="col-md-3">
+
+
+            <div class="card text-center">
+
+
+                <div class="card-body">
+                    <h3 class="card-title text-appercase">
+                        {{nombreProducto}}
+                    </h3>
+     
+                   
+                     <p class="m-2">
+                        {{cantidadProducto}}
+                    </p>
+                     <p class="m-2">
+                        {{descripcionProducto}}
+                    </p>
+
+                    <p>{{timeago fechaProducto}}</p>
+
+                    <a href="/links/delete/{{{idProducto}}}" class="btn btn-danger">delete</a>
+                    <a href="/links/edit/{{idProducto}}" class="btn btn-secondary">edit</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+{{else}}
+<div class="col-md-4 mx-auto">
+    <div class="card-card-body text-center">
+
+        <p>no hay datos</p>
+        <a href="/links/add">quieres agregar un nuevo producto?</a>
+    </div>
+</div>
+
+
+        {{/each}}
+    </div>
+
+</div>
