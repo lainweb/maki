@@ -157,7 +157,7 @@ router.post('/forgett/', async (req, res) => {
                 from: 'lain@makib.cl',
                 to: mail,
                 subject: 'recuperarContraseña - lain@makib.cl',
-                html: '<p>Ingresa al link <a href="http://localhost:4000/restablecer?token=' + token 
+                html: '<p>Ingresa al link <a href="https://maki.cleverapps.io/restablecer?token=' + token 
 
             };
               email.sendMail(mailOptions, function (error, info) {
