@@ -164,7 +164,7 @@ router.post('/forgett/', async (req, res) => {
                 if (error) {
                     console.log(error)
                 } else {
-                    res.redirect('/exito')
+                    res.render('auth/exito');
                     console.log(0)
                 }
             });
