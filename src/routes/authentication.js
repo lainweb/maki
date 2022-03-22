@@ -143,12 +143,12 @@ router.post('/forgett/', async (req, res) => {
 
             var email = nodemailer.createTransport({
 
-                host: 'mail.makib.cl',
+                host: 'mail.outlook.com',
                 port:465,
                 secure:true,
                 auth: {
-                    user: 'lain@makib.cl',
-                    pass: 'leonelalejandro'
+                    user: 'alejandroo_27_@outlook.com',
+                    pass: 'deliar1988'
                 }
             });
 
@@ -164,7 +164,7 @@ router.post('/forgett/', async (req, res) => {
                 if (error) {
                     console.log(error)
                 } else {
-                    res.render('auth/exito');
+                    res.redirect('/exito')
                     console.log(0)
                 }
             });
