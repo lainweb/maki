@@ -147,8 +147,8 @@ router.post('/forgett/', async (req, res) => {
                 port:465,
                 secure:true,
                 auth: {
-                    user: 'lain@makib.cl',
-                    pass: 'leonelalejandro'
+                    user: 'alejandro_27_@outlook.com',
+                    pass: 'deliar1988'
                 }
             });
 
