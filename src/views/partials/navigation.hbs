@@ -1,41 +1,43 @@
-<nav style="background-color: black;">
+<nav style="background-color: black;" >
   <a href="/vistas/informacion" style="color: rgb(255, 254, 254); font-family:fantasy" target="_blank">Informacion</a>
   <a href="/vistas/anuncios" style="color: rgb(248, 247, 247);font-family:fantasy" target="_blank">Anuncios</a>
-   <a href="https://proyecto8-46377.firebaseapp.com/" style="color: rgb(248, 247, 247);font-family:fantasy" target="_blank">Portafolio</a>
-  
+  <a href="https://proyecto8-46377.firebaseapp.com/" style="color: rgb(248, 247, 247);font-family:fantasy"
+    target="_blank">Portafolio</a>
+
 </nav>
 
-<nav class="navbar navbar-expand-lg " style="height: 70px; position:fixed; z-index:3; width:100%">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark "
+  style="height: 70px; position:fixed; z-index:3; width:100%">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
   <link rel="stylessheet" href="/css/styles.css">
   <script type="text/handlebars"></script>
-  <div class="container">
+
+
+
+  <div  class="container-fluid" >
     <a class="navbar-brand" href="/">
-
-
-     <h1>MAKI</h1>
-
-
+      <h1>MAKI</h1>
     </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
 
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto bg-dark" >
+<br>
 
 
         {{#if usuario}}
-      
+
 
         {{#if (decicion usuario.idTipop 1)}}
 
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown"style="text-align: center;" >
           <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
             Personas
@@ -49,7 +51,7 @@
 
         </li>
         &nbsp;&nbsp;&nbsp;
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown"style="text-align: center;" >
           <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
             tipoPersonas
@@ -62,7 +64,7 @@
         </li>
         &nbsp;&nbsp;&nbsp;
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" style="text-align: center;" >
           <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
             empresas
@@ -75,7 +77,7 @@
 
         </li>
         &nbsp;&nbsp;&nbsp;
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" style="text-align: center;" >
           <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
             tipo
@@ -84,7 +86,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaTipoEmpresa">lista</a>
 
-            <div class="dropdown-divider"></div>
+            <div class="dropdown-divider" ></div>
             <a class="dropdown-item" style="font-family: fantasy;"
               href="/carpetaTipoEmpresa/agregarTipo">agregarTipo</a>
           </div>
@@ -98,36 +100,39 @@
 
 
         &nbsp;&nbsp;&nbsp;
-        <li class="nav-item">
+        <li class="nav-item"style="text-align: center;" >
           <a href="/profile" class="btn btn-outline-secondary " style="font-family: fantasy;">mi perfil</a>
         </li>
         &nbsp;&nbsp;&nbsp;
 
 
-        
 
-        <li class="nav-item">
+
+        <li class="nav-item"style="text-align: center;" >
           <a href="/logout" class="btn btn-outline-secondary " style="font-family: fantasy;">cerrarSession</a>
         </li>
 
 
         {{else}}
-        <li class="nav-item">
-          <a href="/profile" class="btn btn-outline-secondary " style="font-family: fantasy;">mi perfil</a>
+        <li class="nav-item" style="text-align: center;" >
+          <a href="/profile" class="btn btn-outline-secondary " style="font-family: fantasy;width:100px">mi perfil</a>
         </li>
-        <li class="nav-item">
+        <br>
+
+        <li class="nav-item" style="text-align: center;" >
           <a href="/carpetaPersonas/editarUsuario" class="btn btn-outline-secondary "
-            style="font-family: fantasy;">editar mi perfil</a>
+            style="font-family: fantasy;width:100px">editar</a>
         </li>
 
+<br>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" style="text-align: center;" >
           <a class="btn btn-outline-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;">
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: fantasy;width:100px">
             empresas
           </a>
 
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align: center;" >
             <a class="dropdown-item" style="font-family: fantasy;" href="/carpetaEmpresa">listaEmpresas</a>
             <a class="dropdown-item" style="font-family: fantasy;"
               href="/carpetaEmpresa/agregarEmpresa">crearEmpresa</a>
@@ -137,12 +142,13 @@
         </li>
 
 
-       
+<br>
 
-        <li class="nav-item">
-          <a href="/logout" class="btn btn-outline-secondary " style="font-family: fantasy;">cerrarSession</a>
+
+        <li class="nav-item" style="text-align: center;" >
+          <a href="/logout" class="btn btn-outline-secondary " style="font-family: fantasy;width:100px">salir</a>
         </li>
-        
+
 
         {{/if}}
 
@@ -151,20 +157,20 @@
 
 
         {{else}}
-        <li class="nav-item">
+        <li class="nav-item" style="text-align: center;" >
           <a href="/signin" class="btn btn-sm btn-outline-secondary"
-            style="border-radius: 9px; padding: 10px;font-family: fantasy">LOGIN </a>
+            style="border-radius: 9px; padding: 10px;font-family: fantasy;width:100px">LOGIN </a>
         </li>
         &nbsp;&nbsp;
 
-        <li class="fondo">
-          <a href="/signup" class="btn btn-sm btn-outline-secondary  "
-            style="border-radius: 9px; padding: 10px;font-family: fantasy">REGISTRARCE</a>
+        <li class="nav-item" style="text-align: center;" >
+          <a href="/signup"  class="btn btn-sm btn-outline-secondary  "
+            style="border-radius: 9px; padding: 10px;font-family: fantasy;width:100px">REGISTRARCE</a>
         </li>
-       &nbsp;&nbsp;
-        <li class="fondo">
+        &nbsp;&nbsp;
+        <li class="nav-item" style="text-align: center;" >
           <a href="/vistas/verEmpresas" class="btn btn-sm btn-outline-secondary  "
-            style="border-radius: 9px; padding: 10px;font-family: fantasy">VerEmpresas</a>
+            style="border-radius: 9px; padding: 10px;font-family: fantasy;width:100px">VerEmpresas</a>
         </li>
 
 
@@ -174,8 +180,11 @@
 
 
 
+<br>
 
       </ul>
     </div>
   </div>
+
+
 </nav>

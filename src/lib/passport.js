@@ -85,14 +85,14 @@ passport.use('local.signup', new LocalStrategy({
 }, async (req, correoPersona, contrasenaPersona, done) => {
 
     var arregloPaquete = [
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 
-    'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif', 'amarillo.gif',
+     
+    'amarillo.gif',
     'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif', 'azul.gif',
     'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif', 'verde.gif',
     'rojo.gif','rojo.gif','rojo.gif','rojo.gif','rojo.gif','rojo.gif','rojo.gif','rojo.gif','rojo.gif','rojo.gif',
-    'rosa.gif','rosa.gif','rosa.gif','rosa.gif','rosa.gif',
-    'negro.gif','negro.gif','negro.gif','negro.gif','negro.gif',
-    'blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif'
+    'rosa.gif',
+    'negro.gif',
+    'blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif','blanco.gif',
 ];
     const imagenPersona = arregloPaquete[Math.floor(Math.random() * arregloPaquete.length)];
 
